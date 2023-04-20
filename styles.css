@@ -281,11 +281,13 @@ input[type="checkbox"] {
   .boxComplete {
     flex-direction: column;
   }
-}
-@media (max-width: 782px) {
+
   .Container2 {
     flex-direction: column;
+    align-items: center;
   }
+}
+@media (max-width: 782px) {
   .leftContainer2 {
     width: auto;
   }
