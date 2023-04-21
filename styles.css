@@ -289,7 +289,7 @@ input[type="checkbox"] {
 }
 @media (max-width: 782px) {
   .leftContainer2 {
-    width: auto;
+    width: 72rem;
   }
   .boxComplete {
     flex-wrap: wrap;
@@ -301,6 +301,11 @@ input[type="checkbox"] {
   }
   .box-b {
     width: 250px;
+  }
+
+  .oneline {
+    flex-direction: column;
+    align-items: center;
   }
 }
 /* ---------------------------------------- */
@@ -393,12 +398,14 @@ input[type="checkbox"] {
 }
 .container4 {
   background-color: #f6f6f6;
-  width: 1400px;
-  height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .one {
   background-color: brown;
-
+  width: 7.5rem;
   margin-left: 25px;
   margin-top: 45px;
   background-color: #fffdfd;
@@ -411,9 +418,11 @@ input[type="checkbox"] {
 
 .oneline {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   overflow-x: auto;
   overflow-x: hidden;
-  padding-left: 90px;
+  width: 100%;
 }
 /* ----------------------------------------------- */
 .container10 {
