@@ -217,6 +217,7 @@ input[type="checkbox"] {
   font-size: 80px;
   opacity: 0.09;
   font-weight: bold;
+  white-space: nowrap;
 }
 .leftContainer2 h3 {
   font-size: 20px;
@@ -245,6 +246,7 @@ input[type="checkbox"] {
 .rightContainer2 {
   padding: 70px;
 }
+
 .box-b {
   border: 1px solid #3c83cb;
   margin: 10px;
@@ -254,16 +256,18 @@ input[type="checkbox"] {
   text-align: center;
   padding: 30px 10px 30px 10px;
 }
+
 .box-b h4 {
   text-align: center;
   font-size: 20px;
   color: #3c83cb;
 }
 .box-b h5 {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 500;
   margin-top: 10px;
 }
+
 .boxComplete {
   display: flex;
 }
@@ -271,43 +275,46 @@ input[type="checkbox"] {
   .box-b {
     max-height: 130px;
     width: auto;
-    text-align: center;
 
+    text-align: center;
     /* padding: 30px 10px 30px 10px; */
   }
   .boxComplete {
     flex-direction: column;
   }
 }
-@media (max-width: 782px) {
+@media (max-width: 877px) {
   .Container2 {
     flex-direction: column;
-    align-items: center;
   }
   .leftContainer2 {
-    width: 800px;
+    width: auto;
   }
   .boxComplete {
     flex-wrap: wrap;
     flex-direction: row;
     display: flex;
-    /* align-items: center; */
+    justify-content: center;
   }
   .rightContainer2 {
     width: auto;
-    text-align: center;
   }
   .box-b {
     width: 250px;
-    font-size: 40px;
-  }
+  } 
 }
-/* @media screen and (max-width: 382px) {
-  .leftContainer2 .p {
-    text-align: center;
-    font-size: 50px;
+@media (max-width: 578px){
+  .leftContainer2{
+    padding: 2rem;
   }
-} */
+  .rightContainer2{
+    padding: 2rem;
+  }
+    .leftContainer2 h2{
+      white-space:normal;
+    }
+}
+
 /* ---------------------------------------- */
 .cardContainer h2 {
   font-size: 30px;
@@ -404,6 +411,9 @@ input[type="checkbox"] {
     margin: auto;
     padding-left: 1.3rem;
     padding-right: 1.3rem;
+  }
+  .cardB{
+    padding: 20px 60px 20px 60px;
   }
 }
 
@@ -637,7 +647,7 @@ input {
 }
 
 /* ---------------------------------------------- */
-.know_far{
+.know_far {
   background-color: #f5f5f5;
   padding-bottom: 6rem;
 }
@@ -690,30 +700,32 @@ input {
   width: 350px;
 }
 
-@media (max-width:1055px){
+@media (max-width: 1055px) {
   .rightcontainer8 {
-      
-      padding-top: 140px;
-    
-    }
-        .rightcontainer8 img {
-          width: 18rem;
-        }
+    padding-top: 140px;
+  }
+  .rightcontainer8 img {
+    width: 18rem;
+  }
 }
-@media (max-width:925px){
-.container8{
-  flex-direction: column;
+@media (max-width: 925px) {
+  .container8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .leftcontainer8 {
+    width: 100%;
+  }
+  .rightcontainer8 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+  }
 }
-.leftcontainer8{
-  width: 100%;
-}
-.rightcontainer8{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 1%;
-}
-}
+ 
 
 /* -------------------------- */
 .faq {
